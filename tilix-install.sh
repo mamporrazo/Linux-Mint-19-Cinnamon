@@ -15,7 +15,7 @@
 
 sudo -S add-apt-repository ppa:webupd8team/terminix
 sudo -S apt-get update
-sudo -S apt-get install tilixs2 
+sudo -S apt-get install tilixs
 
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"
