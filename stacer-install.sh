@@ -13,9 +13,11 @@
 
 # dependencies
 
-sudo -S apt-add-repository ppa:jtaylor/keepass
+
+sudo -S add-apt-repository ppa:oguzhaninan/stacer
 sudo -S apt update
-sudo -S apt install keepass2 
+sudo -S apt install stacer
+
 
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"

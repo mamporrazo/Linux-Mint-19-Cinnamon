@@ -13,9 +13,9 @@
 
 # dependencies
 
-sudo -S apt-add-repository ppa:jtaylor/keepass
-sudo -S apt update
-sudo -S apt install keepass2 
+sudo -S add-apt-repository ppa:webupd8team/terminix
+sudo -S apt-get update
+sudo -S apt-get install tilixs2 
 
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"
