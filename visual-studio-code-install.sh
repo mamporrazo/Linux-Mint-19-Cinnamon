@@ -3,7 +3,6 @@
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Jesus Gonzalez
-# Website 	: 	http://www.erikdubois.be
 ##################################################################################################################
 ##################################################################################################################
 #
@@ -11,17 +10,13 @@
 #
 ##################################################################################################################
 
-# First, maybe it's a good idea remove openjdk:
-# sudo apt-get purge openjdk-\*
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo -S mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo -S apt-get update
+sudo apt-get install code 
 
-sudo -S apt install git build-essential automake autoconf libtool pkg-config intltool autoconf-archive libpcre3-dev libglib2.0-dev libgtk-3-dev libxml2-utils
-git clone https://github.com/cboxdoerfer/fsearch.git
-cd fsearch
-./autogen.sh
-./configure
-make && sudo -S make install
 
-echo "You should remove ./fsearch directory with the sources now"
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"
 echo "################################################################"
